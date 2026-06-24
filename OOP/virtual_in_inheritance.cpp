@@ -24,7 +24,7 @@ int main()
 {
 	Puppy p;
 	p.eat();
-	cout<<p.a<<endl;
+	//cout<<p.a<<endl;
 	cout<<p.Cat::a<<endl;
 	cout<<p.Dog::a<<endl;
 }
