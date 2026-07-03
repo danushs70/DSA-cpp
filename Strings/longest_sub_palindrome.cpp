@@ -10,7 +10,7 @@ string longestPalindrome(string s) {
 
     for (int i = 0; i < n; i++) {
 
-        // 🔵 Odd length palindrome
+        //  Odd length palindrome
         int left = i, right = i;
         while (left >= 0 && right < n && s[left] == s[right]) {
             if (right - left + 1 > maxLen) {
@@ -21,7 +21,7 @@ string longestPalindrome(string s) {
             right++;
         }
 
-        // 🟢 Even length palindrome
+        // Even length palindrome
         left = i;
         right = i + 1;
         while (left >= 0 && right < n && s[left] == s[right]) {
