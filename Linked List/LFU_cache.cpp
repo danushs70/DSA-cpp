@@ -54,11 +54,11 @@ class LFUCache {
 private:
 
    // Hashmap to store the key-nodes pairs
-   map<int, Node*> keyNode; 
+   map<int, Node*> keyNode;
    
    /* Hashmap to maintain the lists 
    having different frequencies */
-   map<int, List*> freqListMap; 
+   map<int, List*> freqListMap;
    
    int maxSizeCache; // Max size of cache
    
@@ -221,6 +221,6 @@ int main() {
   cout << cache.get(1) << " ";
   cout << cache.get(3) << " ";
   cout << cache.get(4) << " ";
-
+  cout<<endl;
   return 0;
 }
